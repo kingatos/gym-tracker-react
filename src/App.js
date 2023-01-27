@@ -4,6 +4,7 @@ import Header from './Header';
 import Section from "./Section"
 import Form from "./Form";
 import BurgerMenu from './BurgerMenu';
+import trackerLogo from "./Header/images/trackerlogo.png"
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
     <BurgerMenu />
     <Container>
       <Header
-        title="Gym Tracker"
+        trackerLogo={trackerLogo}
         subtitle="know your body" />
       <div>
         <Form
