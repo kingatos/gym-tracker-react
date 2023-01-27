@@ -26,7 +26,7 @@
     color: rgb(12, 12, 12);
     cursor: pointer;
     transition: 0.5s;
-    background: hsl(64, 69%, 51%);
+    background: hsl(48deg 100% 67% / 70%);
     border-radius: 5px;
     font-weight: bold;
 }
