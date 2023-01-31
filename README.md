@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Gym Tracker💪🏼with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [DEMO](https://kingatos.github.io/gym-tracker-react/)
+
+## Description
+
+Here is a GymTracker. Know your body and save your daily progress in one-click!
 
 ## Available Scripts
 
