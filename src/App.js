@@ -1,14 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Container from './Container';
 import Header from './Header';
 import Section from "./Section"
 import Form from "./Form";
 import BurgerMenu from './BurgerMenu';
-import trackerLogo from "./Header/images/trackerlogo.png"
+import trackerLogo from "./Header/images/trackerlogo.png";
+import BMIcalculator from "./BMIcalculator";
+
+const getInitialTasks = () => {
+  const visitsFromLocalStorage = localStorage.getItem("visits");
+
+  return visitsFromLocalStorage
+  ? JSON.parse(visitsFromLocalStorage)
+  : [];
+};
 
 
 function App() {
-  const [visits, setVisits] = useState([]);
+  const [visits, setVisits] = useState(getInitialTasks);
+
+  useEffect(() => {
+    localStorage.setItem("visits", JSON.stringify(visits));
+  }, [visits]);
   
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -43,6 +56,7 @@ function App() {
           visits={visits}
           removeVisit={removeVisit} />
       </div>
+      <BMIcalculator />
     </Container>
     </>
   );
