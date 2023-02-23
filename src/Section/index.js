@@ -1,5 +1,6 @@
 import "./style.css";
 
+
 const Section = ({ visits, removeVisit }) => (
     <div>
         <h2 className="headerVisits">Your visits:</h2>

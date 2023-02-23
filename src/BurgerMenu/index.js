@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./style.css";
 import burgerImage from "./images/menu-burger.png";
+import { Link } from "react-router-dom";
 
 function BurgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,13 +25,10 @@ function BurgerMenu() {
                 isOpen && (
                     <ul className="list">
                         <li>
-                            <a className="listItem" href="#">Home</a>
+                        <Link to="/form" className="listItem" href="#">know your body</Link>
                         </li>
                         <li>
-                            <a className="listItem" href="#">Add training</a>
-                        </li>
-                        <li>
-                            <a className="listItem" href="#">Training history</a>
+                        <Link to="/bmi-calculator" className="listItem">know your BMI</Link>
                         </li>
                     </ul>
                 )
