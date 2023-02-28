@@ -8,8 +8,6 @@ import FormPage from "./FormPage";
 import BurgerMenu from "./BurgerMenu";
 import trackerLogo from "./Header/images/trackerlogo.png";
 
-
-
 const getInitialVisits = () => {
   const visitsFromLocalStorage = localStorage.getItem("visits");
 
