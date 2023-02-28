@@ -1,0 +1,40 @@
+.headerVisits {
+    color: white;
+    text-align: center;
+}
+
+.visitsList {
+    color:rgb(39, 38, 38);
+    padding: 10px;
+    display: flex;
+    border-bottom: 0px solid #ddd;
+    text-align: center;
+    background-color:#ddddddab;
+    margin-left: -20px;
+    margin-right: -20px;
+    box-shadow: 0px 0px 13px 9px rgb(12 12 12 / 40%);
+    border-radius: 5px;
+}
+
+.button__listRemove {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(212, 11, 11);
+    color: beige;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.button__listRemove:hover {
+    background-color: hsl(348, 60%, 61%);
+    color:rgba(39, 38, 38, 0.911);
+}
+
+.button__listRemove:active {
+    background-color: hsla(348, 60%, 61%, 0.842);
+    color:rgba(39, 38, 38, 0.76);
+}
