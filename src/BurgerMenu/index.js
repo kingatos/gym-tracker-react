@@ -38,7 +38,7 @@ function BurgerMenu() {
         {isOpen && (
           <ul className="list">
             <li>
-              <Link to="/gym-tracker-react" className="listItem">
+              <Link to="/home-page" className="listItem">
                 home
               </Link>
             </li>

@@ -29,7 +29,7 @@ function App() {
         <Header trackerLogo={trackerLogo}  />
         <Router>
           <Routes>
-            <Route path="/gym-tracker-react" element={<HomePage />} />
+            <Route path="/home-page" element={<HomePage />} />
             <Route path="/body-info" element={<BodyInfoPage subtitle="know your body" visits={visits} setVisits={setVisits} />}/>
             <Route path="/bmi-calculator" element={<BMIcalculatorPage />} />
           </Routes>
