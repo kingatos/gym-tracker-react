@@ -9,6 +9,7 @@ html {
 #root {
   font-family: 'Montserrat', sans-serif;
   padding: 30px;
+  height: 300vh;
   background-image: url("../background1.jpg");
   background-repeat: no-repeat;
   background-position:center;
