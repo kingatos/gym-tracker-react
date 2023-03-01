@@ -25,7 +25,7 @@ function BurgerMenu() {
                 isOpen && (
                     <ul className="list">
                         <li>
-                        <Link to="/form" className="listItem" href="#">know your body</Link>
+                        <Link to="/body-info" className="listItem" >know your body</Link>
                         </li>
                         <li>
                         <Link to="/bmi-calculator" className="listItem">know your BMI</Link>
