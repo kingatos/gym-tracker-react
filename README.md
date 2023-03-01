@@ -1,8 +1,8 @@
 # Gym Tracker💪🏼with Create React App
 
-# ↪️[DEMO](https://i.ibb.co/BskvXVM/Gym-Tracker.gif)
+# ↪️[DEMO](https://kingatos.github.io/gym-tracker-react/)
 
-# ![How it use?](https://i.ibb.co/hX7zMXq/Gym-Tracker.gif)
+# ![How it use?](https://i.ibb.co/BskvXVM/Gym-Tracker.gif)
 
 ## Description
 
