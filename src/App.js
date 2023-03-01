@@ -6,6 +6,7 @@ import Header from "./Header";
 import BurgerMenu from "./BurgerMenu";
 import trackerLogo from "./Header/images/trackerlogo.png";
 import BodyInfoPage from "./BodyInfoPage";
+import HomePage from "./HomePage";
 
 const getInitialVisits = () => {
   const visitsFromLocalStorage = localStorage.getItem("visits");
@@ -28,10 +29,8 @@ function App() {
         <Header trackerLogo={trackerLogo}  />
         <Router>
           <Routes>
-            <Route
-              path="/body-info"
-              element={<BodyInfoPage subtitle="know your body" visits={visits} setVisits={setVisits} />}
-            />
+            <Route path="/home-page" element={<HomePage />} />
+            <Route path="/body-info" element={<BodyInfoPage subtitle="know your body" visits={visits} setVisits={setVisits} />}/>
             <Route path="/bmi-calculator" element={<BMIcalculatorPage />} />
           </Routes>
           <BurgerMenu />

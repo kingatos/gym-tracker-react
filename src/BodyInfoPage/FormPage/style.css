@@ -40,18 +40,3 @@
     background-color: hsl(64, 19%, 52%);
 }
 
-.list {
-    list-style: none;
-    padding: 20px;
-}
-
-.listItem {
-    color:#000000e8;
-    text-decoration: none;
-    font-size: 20px;
-    transition: 0.6s;
-}
-
-.listItem:hover {
-    color:blanchedalmond
-}
