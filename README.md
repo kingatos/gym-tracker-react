@@ -2,7 +2,7 @@
 
 # ↪️[DEMO](https://kingatos.github.io/gym-tracker-react/)
 
-# ![How it use?](https://i.ibb.co/BskvXVM/Gym-Tracker.gif)
+# ![How it use?](https://i.ibb.co/Jjbc3RS/Gym-Tracker.gif)
 
 ## Description
 
