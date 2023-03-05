@@ -5,6 +5,7 @@ import "./style.css";
     const [weight, setWeight] = useState("");
     const [height, setHeight] = useState("");
     const [bmi, setBmi] = useState(0);
+    const [BMIstatus, setBMIstatus] = useState("");
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -13,6 +14,16 @@ import "./style.css";
             weight / (height / 100) ** 2;
 
         setBmi(calculatedBMI)
+
+        if (calculatedBMI <= 18.5) {
+            setBMIstatus ("Underweight");
+        } else if (calculatedBMI <= 25) {
+            setBMIstatus ("Normal");
+        } else if (calculatedBMI <= 30) {
+            setBMIstatus ("Overweight");
+        } else {
+            setBMIstatus ("Obese");
+        }
     };
 
     return (
@@ -51,6 +62,10 @@ import "./style.css";
                 </button>
                 <p className="resultBmi">
                     Your BMI: {bmi.toFixed(2)}
+                </p>
+                    <br />
+                <p className="statusBmi">
+                    BMI status: {BMIstatus}
                 </p>
             </form>
 
