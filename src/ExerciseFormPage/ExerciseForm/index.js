@@ -34,6 +34,7 @@ const ExerciseForm = ({ onSubmit }) => (
           id="exercise"
           name="exercise"
           required
+          placeholder="enter type of exercise"
         />
       <br />
       <label
@@ -48,7 +49,7 @@ const ExerciseForm = ({ onSubmit }) => (
           id="weight"
           name="weight"
           required
-          placeholder="(kg)"
+          placeholder="kg"
         />
       <br />
       <label 
@@ -62,7 +63,8 @@ const ExerciseForm = ({ onSubmit }) => (
           type="number"
           id="reps"
           name="reps"
-          required 
+          required
+          placeholder="enter number of reps"
         />
       <br />
       <input

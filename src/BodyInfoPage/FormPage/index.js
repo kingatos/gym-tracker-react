@@ -30,6 +30,7 @@ const FormPage = ({ onSubmit }) => (
       d="weight" 
       name="weight" 
       required 
+      placeholder="kg"
     />
     <br />
     <label 
@@ -44,6 +45,7 @@ const FormPage = ({ onSubmit }) => (
       id="biceps" 
       name="biceps" 
       required 
+      placeholder="cm"
     />
     <br />
     <label 
@@ -58,6 +60,7 @@ const FormPage = ({ onSubmit }) => (
       id="chest" 
       name="chest" 
       required 
+      placeholder="cm"
     />
     <br />
     <label 
@@ -72,6 +75,7 @@ const FormPage = ({ onSubmit }) => (
       id="waist" 
       name="waist" 
       required 
+      placeholder="cm"
     />
     <br />
     <input 
