@@ -54,3 +54,10 @@
     font-weight: 700;
     text-align: center;
 }
+
+.statusBmi {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
