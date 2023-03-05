@@ -9,22 +9,24 @@ import "./style.css";
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
+      
         const calculatedBMI = () =>
-            weight / (height / 100) ** 2;
-
-        setBmi(calculatedBMI)
-
-        if (calculatedBMI <= 18.5) {
-            setBMIstatus ("Underweight");
-        } else if (calculatedBMI <= 25) {
-            setBMIstatus ("Normal");
-        } else if (calculatedBMI <= 30) {
-            setBMIstatus ("Overweight");
+          Number(weight / Number(height / 100) ** 2);
+      
+        const bmi = calculatedBMI();
+        setBmi(bmi);
+      
+        if (bmi <= 18.5) {
+          setBMIstatus("Underweight");
+        } else if (bmi <= 25) {
+          setBMIstatus("Normal");
+        } else if (bmi <= 30) {
+          setBMIstatus("Overweight");
         } else {
-            setBMIstatus ("Obese");
+          setBMIstatus("Obese");
         }
-    };
+      };
+      
 
     return (
         <>
@@ -41,6 +43,7 @@ import "./style.css";
                         type="text"
                         value={weight}
                         onChange={e => setWeight(e.target.value)}
+                        placeholder="kg"
                     />
                 <br />
                 <label className="label">
@@ -52,6 +55,7 @@ import "./style.css";
                         type="text"
                         value={height}
                         onChange={e => setHeight(e.target.value)}
+                        placeholder="cm"
                     />
                 <br />
                 <button
@@ -63,9 +67,8 @@ import "./style.css";
                 <p className="resultBmi">
                     Your BMI: {bmi.toFixed(2)}
                 </p>
-                    <br />
                 <p className="statusBmi">
-                    BMI status: {BMIstatus}
+                    {BMIstatus}
                 </p>
             </form>
 
