@@ -23,6 +23,7 @@ import "./style.css";
                 className="form">
                 <label className="label">
                     Weight:
+                </label>
                     <input
                         className="input"
                         required
@@ -30,10 +31,10 @@ import "./style.css";
                         value={weight}
                         onChange={e => setWeight(e.target.value)}
                     />
-                </label>
                 <br />
                 <label className="label">
                     Height:
+                </label>
                     <input
                         className="input"
                         required
@@ -41,7 +42,6 @@ import "./style.css";
                         value={height}
                         onChange={e => setHeight(e.target.value)}
                     />
-                </label>
                 <br />
                 <button
                     className="buttonInput"
