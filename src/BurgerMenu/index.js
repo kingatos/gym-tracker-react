@@ -52,6 +52,11 @@ function BurgerMenu() {
                 know your BMI
               </Link>
             </li>
+            <li>
+              <Link to="/exercise-form" className="listItem">
+                know your progress
+              </Link>
+            </li>
           </ul>
         )}
       </div>
@@ -75,6 +80,11 @@ if (isTablet) {
             <li>
               <Link to="/bmi-calculator" className="listItem">
                 know your BMI
+              </Link>
+            </li>
+            <li>
+              <Link to="/exercise-form" className="listItem">
+                know your progress
               </Link>
             </li>
           </ul>

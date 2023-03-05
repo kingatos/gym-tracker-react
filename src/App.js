@@ -7,6 +7,7 @@ import BurgerMenu from "./BurgerMenu";
 import trackerLogo from "./Header/images/trackerlogo.png";
 import BodyInfoPage from "./BodyInfoPage";
 import HomePage from "./HomePage";
+import ExerciseFormPage from "./ExerciseFormPage";
 
 const getInitialVisits = () => {
   const visitsFromLocalStorage = localStorage.getItem("visits");
@@ -16,8 +17,17 @@ const getInitialVisits = () => {
     : [];
 };
 
+const getInitialExercises = () => {
+  const exercisesFromLocalStorage = localStorage.getItem("exercises");
+
+  return exercisesFromLocalStorage && exercisesFromLocalStorage.length > 0
+    ? JSON.parse(exercisesFromLocalStorage)
+    : [];
+};
+
 function App() {
-  const [visits, setVisits] = useState(getInitialVisits);
+  const [visits, setVisits] = useState(getInitialVisits());
+  const [exercises, setExercises] = useState(getInitialExercises());
 
   useEffect(() => {
     localStorage.setItem("visits", JSON.stringify(visits));
@@ -26,12 +36,31 @@ function App() {
   return (
     <>
       <Container>
-        <Header trackerLogo={trackerLogo}  />
+        <Header trackerLogo={trackerLogo} />
         <Router>
           <Routes>
+            <Route path="/" element={<HomePage />}default/>
             <Route path="/home-page" element={<HomePage />} />
-            <Route path="/body-info" element={<BodyInfoPage subtitle="know your body" visits={visits} setVisits={setVisits} />}/>
+            <Route
+              path="/body-info"
+              element={
+                <BodyInfoPage
+                  subtitle="know your body"
+                  visits={visits}
+                  setVisits={setVisits}
+                />
+              }
+            />
             <Route path="/bmi-calculator" element={<BMIcalculatorPage />} />
+            <Route
+              path="/exercise-form"
+              element={
+                <ExerciseFormPage
+                  exercises={exercises}
+                  setExercises={setExercises}
+                />
+              }
+            />
           </Routes>
           <BurgerMenu />
         </Router>
