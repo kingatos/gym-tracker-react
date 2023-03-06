@@ -49,7 +49,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 `media queries`
 `Open Graph`
 `FLEX/GRID`
-`normalise.css`
+`normalize.css`
 `react.js`
 `node.js`
 `create react app`
