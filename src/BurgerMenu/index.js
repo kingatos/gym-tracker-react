@@ -8,7 +8,7 @@ function BurgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
   const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
-   
+
   useEffect(() => {
     const closeMenu = () => {
       if (isOpen) {
@@ -63,35 +63,34 @@ function BurgerMenu() {
     );
   }
 
-if (isTablet) {
-  return (
-    <div className="burgerArea">
-          <ul className="list">
-            <li>
-              <Link to="/home-page" className="listItem">
-                home
-              </Link>
-            </li>
-            <li>
-              <Link to="/body-info" className="listItem">
-                know your body
-              </Link>
-            </li>
-            <li>
-              <Link to="/bmi-calculator" className="listItem">
-                know your BMI
-              </Link>
-            </li>
-            <li>
-              <Link to="/exercise-form" className="listItem">
-                know your progress
-              </Link>
-            </li>
-          </ul>
+  if (isTablet) {
+    return (
+      <div className="burgerArea">
+        <ul className="list">
+          <li>
+            <Link to="/home-page" className="listItem">
+              home
+            </Link>
+          </li>
+          <li>
+            <Link to="/body-info" className="listItem">
+              know your body
+            </Link>
+          </li>
+          <li>
+            <Link to="/bmi-calculator" className="listItem">
+              know your BMI
+            </Link>
+          </li>
+          <li>
+            <Link to="/exercise-form" className="listItem">
+              know your progress
+            </Link>
+          </li>
+        </ul>
       </div>
     );
   }
 }
-
 
 export default BurgerMenu;
