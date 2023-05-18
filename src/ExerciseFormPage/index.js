@@ -13,18 +13,24 @@ function ExerciseFormPage({ exercises, setExercises }) {
       reps: formData.get("reps"),
     };
     setExercises([...exercises, newExercise]);
-    localStorage.setItem("exercises", JSON.stringify([...exercises, newExercise]));
+    localStorage.setItem(
+      "exercises",
+      JSON.stringify([...exercises, newExercise])
+    );
   };
 
   const removeExercise = (id) => {
-    setExercises(exercises.filter((exercise) => exercise.id!== id));
-    localStorage.setItem("exercises", JSON.stringify(exercises.filter((exercise) => exercise.id !== id)));
+    setExercises(exercises.filter((exercise) => exercise.id !== id));
+    localStorage.setItem(
+      "exercises",
+      JSON.stringify(exercises.filter((exercise) => exercise.id !== id))
+    );
   };
 
   return (
     <div>
       <ExerciseForm onSubmit={handleSubmit} />
-      <br />  
+      <br />
       <LastWorkout exercises={exercises} removeExercise={removeExercise} />
     </div>
   );

@@ -39,8 +39,8 @@ function App() {
         <Header trackerLogo={trackerLogo} />
         <Router>
           <Routes>
-            <Route path="/gym-tracker-react" element={<HomePage />} default/>
-            <Route path="/home-page" element={<HomePage />}/>
+            <Route path="/gym-tracker-react" element={<HomePage />} default />
+            <Route path="/home-page" element={<HomePage />} />
             <Route
               path="/body-info"
               element={
