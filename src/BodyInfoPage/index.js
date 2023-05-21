@@ -1,5 +1,5 @@
 import FormPage from "./FormPage";
-import Section from "./Section"; 
+import Section from "./Section";
 
 function BodyInfoPage({ setVisits, visits, subtitle }) {
   const handleSubmit = (event) => {
