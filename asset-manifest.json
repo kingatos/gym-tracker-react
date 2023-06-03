@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/gym-tracker-react/static/css/main.5e88bd3b.css",
-    "main.js": "/gym-tracker-react/static/js/main.aea6cdce.js",
+    "main.js": "/gym-tracker-react/static/js/main.c67c5314.js",
     "static/js/787.ccd533ea.chunk.js": "/gym-tracker-react/static/js/787.ccd533ea.chunk.js",
     "static/media/background1.jpg": "/gym-tracker-react/static/media/background1.63a5164244ce76837bb6.jpg",
     "index.html": "/gym-tracker-react/index.html",
     "main.5e88bd3b.css.map": "/gym-tracker-react/static/css/main.5e88bd3b.css.map",
-    "main.aea6cdce.js.map": "/gym-tracker-react/static/js/main.aea6cdce.js.map",
+    "main.c67c5314.js.map": "/gym-tracker-react/static/js/main.c67c5314.js.map",
     "787.ccd533ea.chunk.js.map": "/gym-tracker-react/static/js/787.ccd533ea.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5e88bd3b.css",
-    "static/js/main.aea6cdce.js"
+    "static/js/main.c67c5314.js"
   ]
 }
