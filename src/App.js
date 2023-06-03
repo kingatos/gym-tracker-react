@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import BMIcalculatorPage from "./BMIcalculatorPage";
 import Container from "./Container";
 import Header from "./Header";
@@ -37,34 +37,36 @@ function App() {
     <>
       <Container>
         <Header trackerLogo={trackerLogo} />
-        <Router>
-          <Routes>
-            <Route path="/gym-tracker-react" element={<HomePage />} default />
-            <Route path="/home-page" element={<HomePage />} />
-            <Route
-              path="/body-info"
-              element={
-                <BodyInfoPage
-                  subtitle="know your body"
-                  visits={visits}
-                  setVisits={setVisits}
-                />
-              }
-            />
-            <Route path="/bmi-calculator" element={<BMIcalculatorPage />} />
-            <Route
-              path="/exercise-form"
-              element={
-                <ExerciseFormPage
-                  exercises={exercises}
-                  setExercises={setExercises}
-                />
-              }
-            />
-            <Route path="/" element={<HomePage />} />
-          </Routes>
+        <HashRouter>
           <BurgerMenu />
-        </Router>
+          <Switch>
+            <Route path="/gym-tracker-react">
+              <HomePage />
+            </Route>
+            <Route path="/home-page">
+              <HomePage />
+            </Route>
+            <Route path="/body-info">
+              <BodyInfoPage
+                subtitle="know your body"
+                visits={visits}
+                setVisits={setVisits}
+              />
+            </Route>
+            <Route path="/bmi-calculator">
+              <BMIcalculatorPage />
+            </Route>
+            <Route path="/exercise-form">
+              <ExerciseFormPage
+                exercises={exercises}
+                setExercises={setExercises}
+              />
+            </Route>
+            <Route>
+              <Redirect to={<HomePage />} />
+            </Route>
+          </Switch>
+        </HashRouter>
       </Container>
     </>
   );
