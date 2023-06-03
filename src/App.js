@@ -61,6 +61,7 @@ function App() {
                 />
               }
             />
+            <Route path="/" element={<HomePage />} />
           </Routes>
           <BurgerMenu />
         </Router>
