@@ -2,8 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width:100%;
-    background-color:hsl(48deg 100% 67% / 70%);
+    width: 100%;
+    background-color: hsl(48deg 100% 67% / 70%);
     box-shadow: 0px 0px 13px 9px rgb(12 12 12 / 40%);
     padding: 10px;
 }
@@ -36,32 +36,31 @@
     padding: 20px;
 }
 
-@media (min-width : 768px) {    
-    .list { 
+@media (min-width : 768px) {
+    .list {
         list-style: none;
         padding: 0px;
         margin: 0;
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
-        gap:20px;
+        gap: 20px;
     }
 }
 
 .listItem {
-    color:#000000e8;
+    color: #000000e8;
     text-decoration: none;
     font-size: 20px;
     transition: 0.6s;
 }
 
-@media (min-width : 768px) {    
-    .listItem { 
+@media (min-width : 768px) {
+    .listItem {
         font-size: 16px;
     }
 }
 
 .listItem:hover {
-    color:blanchedalmond
+    color: blanchedalmond
 }
-
