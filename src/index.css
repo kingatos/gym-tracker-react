@@ -1,9 +1,9 @@
 html {
   box-sizing: border-box;
 }
-  
+
 *, ::after, ::before {
-  box-sizing:inherit;
+  box-sizing: inherit;
 }
 
 #root {
@@ -12,8 +12,7 @@ html {
   height: 300vh;
   background-image: url("../background1.jpg");
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-
