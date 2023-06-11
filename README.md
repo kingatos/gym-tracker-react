@@ -6,7 +6,7 @@
 
 ## Description
 
-Here is a GymTracker. Know your body and save your daily progress in one-click!
+Here is a GymTracker. Know your body and save your daily progress in one-click! Check this out!
 
 ## Available Scripts
 
