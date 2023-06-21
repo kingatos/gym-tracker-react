@@ -10,9 +10,11 @@
     0% {
         color: ivory;
     }
+
     50% {
         color: #ffb922;
     }
+
     100% {
         color: ivory;
     }
@@ -31,6 +33,11 @@
 }
 
 @keyframes zoom {
-    from {transform: scale(1)}
-    to {transform: scale(1.5)}
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.5)
+    }
 }
