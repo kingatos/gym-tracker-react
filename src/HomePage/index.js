@@ -13,6 +13,9 @@ function HomePage() {
       <p className="welcoming__pharagraph">
         Be healthly!
       </p>
+      <p className="welcoming__pharagraph">
+        Be responsibility!
+      </p>
     </div>
   );
 }
