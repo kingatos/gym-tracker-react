@@ -7,14 +7,10 @@ function HomePage() {
       <p className="welcoming__pharagraph">
         Know your body and save your daily progress one-click!
       </p>
+      <p className="welcoming__pharagraph">Get your specifity!</p>
+      <p className="welcoming__pharagraph">Be healthly!</p>
       <p className="welcoming__pharagraph">
-        Get your specifity!
-      </p>
-      <p className="welcoming__pharagraph">
-        Be healthly!
-      </p>
-      <p className="welcoming__pharagraph">
-        Be responsibility!
+        Be responsibility and considerate! Choose well!
       </p>
     </div>
   );
