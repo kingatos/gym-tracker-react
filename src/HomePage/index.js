@@ -9,9 +9,6 @@ function HomePage() {
       </p>
       <p className="welcoming__pharagraph">Get your specifity!</p>
       <p className="welcoming__pharagraph">Be healthly!</p>
-      <p className="welcoming__pharagraph">
-        Be responsibility and considerate! 
-      </p>
     </div>
   );
 }
