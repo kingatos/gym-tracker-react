@@ -15,4 +15,5 @@ html {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  word-break: break-word;
 }
