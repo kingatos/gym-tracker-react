@@ -30,7 +30,7 @@ import "./style.css";
 
     return (
         <>
-        <h2 className="header">know your BMI</h2>
+        <h2 className="header">know your body mass index </h2>
             <form
                 onSubmit={handleSubmit}
                 className="form">
