@@ -43,7 +43,7 @@ import "./style.css";
                         type="text"
                         value={weight}
                         onChange={e => setWeight(e.target.value)}
-                        placeholder="kg"
+                        placeholder="enter your weight"
                     />
                 <br />
                 <label className="label">
@@ -55,7 +55,7 @@ import "./style.css";
                         type="text"
                         value={height}
                         onChange={e => setHeight(e.target.value)}
-                        placeholder="cm"
+                        placeholder="enter your height"
                     />
                 <br />
                 <button
