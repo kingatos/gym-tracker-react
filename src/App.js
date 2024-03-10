@@ -43,7 +43,7 @@ function App() {
             <Route path="/gym-tracker-react">
               <HomePage />
             </Route>
-            <Route path="/home-page">
+            <Route exact path="/">
               <HomePage />
             </Route>
             <Route path="/body-info">
