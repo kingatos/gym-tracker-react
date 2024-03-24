@@ -7,7 +7,9 @@ function HomePage() {
       <p className="welcoming__pharagraph">
         Know your body and save your daily progress one-click!
       </p>
-      <p className="welcoming__pharagraph"><strong>Get your specifity!</strong></p>
+      <p className="welcoming__pharagraph">
+        <strong>Get your specifity!</strong>
+      </p>
     </div>
   );
 }
